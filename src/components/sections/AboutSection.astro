@@ -1,0 +1,95 @@
+---
+import Img1 from '../../img/Rectangle 2.png'
+import { Award } from 'lucide-astro'
+import { Headset } from 'lucide-astro'
+import { ShieldCheck } from 'lucide-astro'
+
+---
+
+<section
+    class="flex flex-col md:flex-row items-center gap-10 pt-20 pb-10 w-[90%]"
+>
+    <div class="relative w-full md:w-1/2">
+        <img
+            src={Img1.src}
+            alt="Soporte TI"
+            class="image-wrapper w-full h-auto rounded-[20px]"
+        />
+
+        <div
+            class="absolute
+            bottom-6
+            right-4
+            md:right-[-50px]
+            flex items-center
+            bg-white
+            p-4
+            rounded-[20px]
+            shadow-lg
+            z-10"
+        >
+            <div class="mr-4">
+
+                <ShieldCheck class="w-14 h-14 rounded-[30px] bg-[#8bc34a] p-2 shadow-md"/>
+
+                
+            </div>
+
+            <div class="text-center">
+                <p class="text-[15px] font-semibold text-gray-700">
+                    EXPERIENCIA
+                </p>
+                <strong class="text-[18px] font-bold text-gray-900">
+                    +10 Años
+                </strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+        <span class="block text-[22.5px] font-semibold text-gray-600">
+            NOSOTROS
+        </span>
+
+        <h2 class="font-bold text-[40px]">AYUDAMOS A SU EMPRESA</h2>
+
+        <h3 class="text-[22.5px]">A ESCALAR SU CAPACIDAD CON INGENIERÍA</h3>
+
+        <p class="text-[17.5px]">
+            Impulsamos su crecimiento mediante soluciones personalizadas,
+            optimizando sus recursos tecnológicos para alcanzar nuevos niveles
+            de eficiencia y productividad.
+        </p>
+
+        <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left"
+        >
+            <Headset class="w-12 h-12 rounded-[30px] bg-white p-2 shadow-md"/>
+            <div>
+                <strong class="block text-[22.5px] font-semibold">
+                    SOPORTE BAJO PÓLIZA
+                </strong>
+                <p class="text-[17.5px]">
+                    Brindamos asistencia técnica integral para resolver
+                    cualquier inconveniente rápidamente.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left"
+        >
+            <Award class="w-12 h-12 rounded-[30px] bg-white p-2 shadow-md"/>
+
+            <div>
+                <strong class="block text-[22.5px] font-semibold">
+                    PERSONAL CERTIFICADO
+                </strong>
+                <p class="text-[17.5px]">
+                    Contamos con personal certificado, listos para brindar
+                    soluciones efectivas.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
