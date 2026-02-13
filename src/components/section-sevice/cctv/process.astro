@@ -1,0 +1,260 @@
+---
+import Img1 from "../../../../public/img/seccion1.webp";
+import Img2 from "../../../../public/img/seccion2.webp";
+import Img3 from "../../../../public/img/seccion3.webp";
+import Img4 from "../../../../public/img/seccion4.webp";
+import Img5 from "../../../../public/img/seccion5.webp";
+import Img6 from "../../../../public/img/seccion6.webp";
+import { DoorClosed, Tags, Printer, CaseUpper, FileCheckCorner, HardDriveDownload } from "lucide-astro";
+import "../../../styles/variables.css";
+---
+
+<section
+    class="p-6 md:px-[250px] flex flex-col md:flex-row items-center gap-20 pt-20 pb-10 opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards]"
+>
+    <div>
+        <div class="w-[100%]">
+            <div class="grid text-center justify-center gap-[20px] mb-[7%]">
+                 <div class="inline-flex justify-center">
+                <span
+                    class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium"
+                >
+                    DIGITALIZACIÓN
+                </span>
+            </div>
+
+                <h2 class="text-[32px] border-l-4 border-[var(--secondary)]">
+                    Nuestro Proceso
+                </h2>
+                <p class="text-[16px]">
+                    Se compone de 6 etapas desde la recolección hasta tener su
+                    acervo digital
+                </p>
+            </div>
+
+            <div class="flex flex-col-reverse md:flex-row items-center">
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img1.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:ml-[5%]
+md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <DoorClosed class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Levantamiento
+                        </h3>
+                        <p class="text-[16px]">
+                            Se realiza un levantamiento previo a la recolección
+                            de sus documentos para saber las condiciones de los
+                            documentos y el volumen total a digitalizar.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y asegure sus archivos físicos con un acervo digital
+                            impecable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row items-center mt-[7%]">
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:mr-[5%] md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    
+
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <Tags class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Clasificación
+                        </h3>
+                        <p class="text-[16px]">
+                            Personal de Indexa Digital realizará una clasificación de los documentos a digitalizar, con la finalidad de crear lotes de trabajo.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y ahorre espacio físico con sus nuevos documentos digitales.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img2.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+            </div>
+
+            <div class="flex flex-col-reverse md:flex-row items-center mt-[7%]">
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img3.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:ml-[5%]
+md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <Printer class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Digitalización
+                        </h3>
+                        <p class="text-[16px]">
+                            Una vez que los documentos se encuentran en óptimas condiciones y divididos en lotes de trabajo, se corre el proceso de digitalización de alta velocidad.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y agilice la gestión de su información.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center mt-[7%]">
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:mr-[5%] md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <CaseUpper class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Indexación
+                        </h3>
+                        <p class="text-[16px]">
+                            Se determinan los campos que se desean indexar, es decir, la forma como buscarán los documentos.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y consulte sus documentos digitales desde cualquier lugar.
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img4.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+            </div>
+
+            <div class="flex flex-col-reverse md:flex-row items-center mt-[7%]">
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img5.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:ml-[5%]
+md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <FileCheckCorner class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Verificación
+                        </h3>
+                        <p class="text-[16px]">
+                            Personal de Indexa Digital verificará los documentos digitalizados para que coincidan con los documentos que se encuentran de forma física, mitigando totalmente cualquier caracter no reconocido durante el proceso de reconocimiento de texto.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y encuentre su información digital más rápido que nunca antes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center mt-[7%]">
+                <div
+                    class="w-full text-center m-0 md:w-[44%] md:mr-[5%] md:text-left hover:-translate-y-2 transition-all duration-200"
+                >
+                    <div
+                        class="inline-flex md:flex items-center justify-center rounded-[45px] bg-[var(--primary)] aspect-square w-[12%]"
+                    >
+                        <HardDriveDownload class="text-white w-[40px] h-[40px]" />
+                    </div>
+
+                    <div>
+                        <h3
+                            class="indexa-subtitle-label text-[24px] border-l-4 border-[var(--secondary)] pl-[10px]"
+                        >
+                            Entrega
+                        </h3>
+                        <p class="text-[16px]">
+                            Los documentos digitalizados se entregan en un dispositivo de almacenamiento o en un repositorio en la nube, usted decide.
+                        </p>
+                        <br />
+                        <p class="text-[16px]">
+                            <a
+                                class="text-[16px] text-[var(--primary)] font-bold"
+                                href="#top">Agende su cita hoy mismo</a
+                            > y reciba asesoría gratuita sobre el proceso de digitalización de sus documentos.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/2">
+                    <img
+                        src={Img6.src}
+                        class="image-wrapper w-full h-auto rounded-[20px] shadow-lg hover:-translate-y-2 transition-all duration-200"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+---
+import Title from "../../components/section-sevice/cctv/title.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Process from "../../components/section-sevice/cctv/process.astro";
+import Characteristics from "../../components/section-sevice/cctv/characteristics.astro";
+import Catalog from "../../components/section-sevice/cctv/catalog.astro";
+import FAQ from "../../components/FAQ.astro";
+---
+
+<BaseLayout>
+<Title client:visible/>
+<Process client:visible/>
+<Characteristics client:visible/>
+<Catalog/>
+<FAQ/>
+</BaseLayout>

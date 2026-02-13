@@ -1,0 +1,162 @@
+---
+import img1 from "../../../../public/img/admin-ajax.webp";
+import { User } from "lucide-astro";
+import { AtSign } from "lucide-astro";
+import { Clock8 } from "lucide-astro";
+---
+
+<section
+  class="p-6 md:w-[100%] md:px-[250px] h-auto md:h-screen bg-[url('/img/landing-bg-2-white.webp')] bg-cover bg-center bg-no-repeat opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards]"
+>
+  <div
+    class="flex flex-col md:flex-row h-auto md:h-[55%] mt-[30px] gap-10 md:gap-0"
+  >
+    <div class="text-center md:text-left">
+      <h1
+        class="text-[40px] grid md:font-semiboldleading-tight md:leading-[90px]"
+      >
+        <span class="text-[60px]">Acervo Digital</span>
+        <span class="text-[#b7d433] text-[60px]">Garantizado</span>
+      </h1>
+
+      <p
+        class="w-full md:w-[72.5%] mt-[25px] text-[16px] leading-[25px] mx-auto md:mx-0"
+      >
+        En Indexa Digital, ofrecemos un servicio integral de digitalización de
+        documentos para transformar sus archivos físicos en un valioso acervo
+        digital.
+      </p>
+
+      <p
+        class="w-full md:w-[72.5%] mt-[25px] text-[16px] leading-[25px] mx-auto md:mx-0"
+      >
+        <strong>
+          Llene el formulario a continuación con todos sus datos para iniciar
+          con el proceso de digitalización hoy mismo:
+        </strong>
+      </p>
+    </div>
+
+    <div class="grid gap-[20px] place-items-center md:place-items-end">
+      <div class="grid w-[150px] text-center">
+        <a
+          class="bg-[#b7d433] px-[10px] py-[5px] border-l border-l-[rgba(254,254,254,0.3)] text-[0.7rem] rounded-[25px] text-white hover:shadow-xl hover:-translate-y-1 transition"
+          href="https://indexa.mx/"
+        >
+          INDEXA.MX
+        </a>
+      </div>
+
+      <div class="grid w-[150px] text-center">
+        <p
+          class="bg-[#b7d433] px-[10px] py-[5px] border-l border-l-[rgba(254,254,254,0.3)] text-[0.7rem] uppercase rounded-[25px] text-white hover:shadow-xl hover:-translate-y-1 transition cursor-pointer"
+        >
+          Digitalización
+        </p>
+      </div>
+
+      <div class="relative flex justify-center">
+        <div
+          class="w-[75%] rounded-[100%] md:w-[100%] h-[105%] absolute bg-[#b7d433]"
+        >
+        </div>
+        <img
+          src={img1.src}
+          class="w-[70%] md:w-full rounded-full animate-[float_3s_ease-in-out_infinite]"
+        />
+      </div>
+
+      <button
+        class="bg-[#0f143a] px-[10px] py-[5px] text-[0.7rem] uppercase rounded-[25px] text-white w-[150px] hover:shadow-xl hover:-translate-y-1 transition"
+      >
+        Más Información
+      </button>
+    </div>
+  </div>
+  <div
+    class="w-full md:w-[47%] flex flex-col justify-center lg:mt-[10px] inline-table md:mt-[60px] inline-table"
+  >
+    <div
+      class="flex flex-col md:flex-row gap-4 justify-center mb-[30px] mt-[30px]"
+    >
+      <div class="flex">
+        <label
+          class="bg-[#0f143a] text-white px-[15px] py-[7px] rounded-l-full"
+        >
+          <User />
+        </label>
+        <input
+          class="border rounded-r-[20px] w-full bg-white md:w-[200px]"
+          placeholder="Nombre completo..."
+        />
+      </div>
+
+      <div class="flex">
+        <label
+          class="bg-[#0f143a] text-white px-[15px] py-[7px] rounded-l-full"
+        >
+          <AtSign />
+        </label>
+        <input
+          type="email"
+          class="border rounded-r-[20px] w-full bg-white md:w-[200px]"
+          placeholder="Correo electrónico..."
+        />
+      </div>
+    </div>
+
+    <p class="text-center mb-[10px] text-[16px]">
+      ¿En qué horario podemos contactarle?
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <div class="flex">
+        <label
+          class="bg-[#0f143a] text-white px-[15px] py-[7px] rounded-l-full"
+        >
+          <Clock8 />
+        </label>
+        <select class="border rounded-r-[20px] w-full bg-white md:w-[200px]">
+          <option>- Hora inicial -</option>
+          <option value="09:00">09:00 AM</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="11:00">11:00 AM</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="13:00">13:00 PM</option>
+          <option value="14:00">14:00 PM</option>
+          <option value="15:00">15:00 PM</option>
+          <option value="16:00">16:00 PM</option>
+          <option value="17:00">17:00 PM</option>
+          <option value="18:00">18:00 PM</option>
+        </select>
+      </div>
+
+      <div class="flex">
+        <label
+          class="bg-[#0f143a] text-white px-[15px] py-[7px] rounded-l-full"
+        >
+          <Clock8 />
+        </label>
+        <select class="border rounded-r-[20px] w-full bg-white md:w-[200px]">
+          <option>- Hora final -</option>
+          <option value="09:00">09:00 AM</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="11:00">11:00 AM</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="13:00">13:00 PM</option>
+          <option value="14:00">14:00 PM</option>
+          <option value="15:00">15:00 PM</option>
+          <option value="16:00">16:00 PM</option>
+          <option value="17:00">17:00 PM</option>
+          <option value="18:00">18:00 PM</option>
+        </select>
+      </div>
+    </div>
+
+    <button
+      class="bg-[#0f143a] text-white rounded-[25px] mt-[20px] w-full md:w-[50%] md:h-[39%] mx-auto block hover:shadow-xl hover:-translate-y-1 transition"
+    >
+      ENVIAR SOLICITUD
+    </button>
+  </div>
+</section>

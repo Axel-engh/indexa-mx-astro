@@ -1,0 +1,81 @@
+---
+import { Headphones } from "lucide-astro";
+import Lap from "../../../public/img/lap.webp";
+import "../../styles/variables.css";
+---
+
+<section
+    class="px-6 md:features py-10 md:px-[20%] opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards]"
+>
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div
+            class="w-full md:w-full space-y-4
+                    text-center md:text-left
+                    flex flex-col items-center md:items-start"
+        >
+            <span class="text-[24px] font-semibold text-gray-600">
+                ¿POR QUÉ ELEGIRNOS?
+            </span>
+
+            <h2 class="text-[32px] font-bold">SOMOS ESPECIALISTAS</h2>
+
+            <h3 class="text-[24px]">EN TECNOLOGÍAS DE LA INFORMACIÓN</h3>
+
+            <p class="text-[16px] max-w-xl">
+                Llevamos la excelencia tecnológica al corazón de tu empresa.
+                Desde la consultoría estratégica hasta la implementación y
+                soporte continuo
+            </p>
+
+            <ul class="space-y-3 w-full max-w-xl">
+                <li
+                    class="flex items-center gap-3 justify-center md:justify-start"
+                >
+                    <div
+                        class="text-[24px] w-12 h-12 flex items-center justify-center rounded-[30px]
+                    bg-[var(--alernative)] shadow-md p-1.5"
+                    >
+                        <Headphones />
+                    </div>
+                    <strong>ESPECIALISTAS CERTIFICADOS</strong>
+                </li>
+
+                <li
+                    class="flex items-center gap-3 justify-center md:justify-start"
+                >
+                    <div
+                        class="text-[24px] w-12 h-12 flex items-center justify-center rounded-[30px]
+                    bg-[var(--alernative)] shadow-md p-1.5"
+                    >
+                        <Headphones />
+                    </div>
+                    <strong>MESA DE SOPORTE REMOTO</strong>
+                </li>
+
+                <li
+                    class="flex items-center gap-3 justify-center md:justify-start"
+                >
+                    <div
+                        class="text-[24px] w-12 h-12 flex items-center justify-center rounded-[30px]
+                    bg-[var(--alernative)] shadow-md p-1.5"
+                    >
+                        <Headphones />
+                    </div>
+                    <strong class="cobert w-[200px]"
+                        >COBERTURA EN CDMX, EDO. MÉX Y QUERÉTARO</strong
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-[100%] md: w-[30%] flex justify-center mt-10 md:mt-0">
+            <div class="image-wrapper w-full max-w-md">
+                <img
+                    src={Lap.src}
+                    alt="Soporte TI"
+                    class="w-full h-auto animate-[float_3s_ease-in-out_infinite]"
+                />
+            </div>
+        </div>
+    </div>
+</section>

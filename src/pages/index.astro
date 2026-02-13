@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import AboutSection from '../components/sections/AboutSection.astro';
-import Solutions from '../components/sections/Solutions.astro';
-import Why from '../components/sections/Why.astro';
+import AboutSection from '../components/sections-home/AboutSection.astro';
+import Solutions from '../components/sections-home/Solutions.astro';
+import Why from '../components/sections-home/Why.astro';
 ---
 
 <BaseLayout>
-<AboutSection/>
-<Solutions/>
-<Why/>
+<AboutSection client:visible/>
+<Solutions client:visible/>
+<Why client:visible/>
 </BaseLayout>

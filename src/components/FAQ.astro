@@ -1,0 +1,94 @@
+---
+import { ChevronDown } from "lucide-astro";
+import Img1 from "../../public/img/indexa-digitalizacion-faq-img-alt-tiny.webp"
+---
+
+<section class="w-full px-6 md:px-[250px] py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div class="md:col-span-2 grid gap-4 justify-center text-center">
+            <div class="inline-flex justify-center">
+                <span
+                    class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium"
+                >
+                    DIGITALIZACIÓN
+                </span>
+            </div>
+
+            <h2 class="text-[32px] border-l-4 border-[var(--secondary)]">
+        Nuestro Proceso </h2>
+<p class="text-[16px] justify-center">
+        Se compone de 6 etapas desde la recolección hasta tener su
+        acervo digital</p>
+        </div>
+
+        <div class="relative flex justify-center items-center">
+            <div class="absolute w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full border-[16px] md:border-[24px] border-[var(--primary)] animate-[float_3s_ease-in-out_infinite]"
+></div>
+
+            <div
+                class="relative w-[260px] h-[260px] md:w-[340px] md:h-[340px] flex items-center justify-center"
+            >
+                <img src={Img1.src}>
+            </div>
+        </div>
+
+
+        <div class="space-y-4">
+            <details class="group p-4">
+                <summary
+                    class="flex cursor-pointer list-none items-center justify-between text-base font-medium"
+                >
+                    ¿Cómo puedo contactar al soporte técnico y cuál es el tiempo de respuesta promedio?
+                    <ChevronDown
+                        class="transition-transform duration-200 group-open:rotate-180"
+                    />
+                </summary>
+
+                <p class="mt-4 text-gray-600">
+                    Puedes contactar con nuestro equipo de soporte técnico de forma inmediata llamando a nuestras oficinas (55-4336-0197), uno de nuestros asesores le brindará la atención necesaria ante su problema para poder dirigirle al área especializada.
+
+Nuestro tiempo de respuesta para emergencias es de 30 minutos a 2 horas en modalidad remota.
+Contar con uno de nuestros ingenieros en sitio podría demorar hasta 12 horas, dependiendo de su ubicación.
+            </details>
+
+            <details class="group p-4">
+                <summary
+                    class="flex cursor-pointer list-none items-center justify-between text-base font-medium"
+                >
+                    ¿Qué tipos de problemas pueden resolver sus especialistas en soporte técnico?
+                    <ChevronDown
+                        class="transition-transform duration-200 group-open:rotate-180"
+                    />
+                </summary>
+
+                <p class="mt-4 text-gray-600">
+                    Nuestro equipo se encuentra preparado para guiarle y asesorarle ante cualquier inconveniente tecnológico, ya sea físico (hardware) o digital (software).
+
+Desde equipos portátiles como laptops, smartphones y tablets, pasando por dispositivos de red e internet, sistemas de seguridad como CCTV y control de accesos, hasta servidores de alto rendimiento, estaciones de trabajo PC e impresoras multifuncionales.
+
+También contamos con la experiencia y el conocimiento para ayudarle con sus sistemas operativos, aplicaciones, software y sitio web, si así lo requiere.
+                </p>
+            </details>
+
+            <details class="group p-4">
+                <summary
+                    class="flex cursor-pointer list-none items-center justify-between text-base font-medium"
+                >
+                    ¿Ofrecen asistencia remota y en sitio para solucionar problemas técnicos?
+                    <ChevronDown
+                        class="transition-transform duration-200 group-open:rotate-180"
+                    />
+                </summary>
+
+                <p class="mt-4 text-gray-600">
+                    En Indexa Digital estamos preparados para asistirle en ambas modalidades: Presencial y Remota, dependiendo de su requerimiento.
+
+Nuestro enfoque se basa en entender su problema como primera instancia, la modalidad remota con pantalla compartida nos facilita el diagnóstico y por ende la resolución, así como ayudarle a continuar sus labores con alguna alternativa temporal.
+En caso de ser necesario adquirir reemplazos (o software) como piezas defectuosas o faltantes y habilitarlas la solicitud será escalada con un ingeniero en sitio para su completa resolución.
+                </p>
+            </details>
+        </div>
+
+        
+    </div>
+</section>

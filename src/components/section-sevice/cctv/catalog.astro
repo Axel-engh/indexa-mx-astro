@@ -1,0 +1,164 @@
+---
+import { BookOpenText, CassetteTape, Printer } from "lucide-astro";
+import img1 from "../../../../public/img/indexa-digital-digitalizador-cenital-tiny.webp";
+import img2 from "../../../../public/img/indexa-digital-digitalizador-feeder-tiny.webp";
+import img3 from "../../../../public/img/indexa-digital-digitalizador-plano-tiny.webp";
+---
+
+<section
+  class="p-6 md:px-[250px] w-[100%] opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards]"
+>
+  <div>
+    <div class="grid text-center justify-center gap-[20px] my-[7%]">
+       <div class="inline-flex justify-center">
+                <span
+                    class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium"
+                >
+                    DIGITALIZACIÓN
+                </span>
+            </div>
+
+      <h2 class="text-[32px] border-l-4 border-[var(--secondary)]">
+        Catalogo
+      </h2>
+
+      <p class="text-[16px]">
+        Nuestro catalogo
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex md:flex-row gap-[30px]">
+      <div
+        class="w-[100%] grid gap-[15px] md:w-[40%] h-auto items-start text-center bg-[var()--alternative] rounded-[25px] transition-all duration-200 hover:-translate-y-2 transition-all duration-200"
+      >
+        <div class="shadow-lg">
+          <img src={img1.src} />
+        </div>
+
+        <div
+          class="aspect-square w-[20%] border-4 border-white rounded-full
+                    flex justify-center items-center bg-[var(--primary)]"
+        >
+          <BookOpenText class="w-[50%] h-[50%] text-white" />
+        </div>
+
+        <div class="grid gap-[15px]">
+          <h3 class="text-[24px] border-l-4 border-[var(--secondary)]">
+            Cenital
+          </h3>
+
+          <p class="text-[16px]">
+            Ideado para libros, ofrece un escaneo versátil para documentos
+            encuadernados o material delicado.
+          </p>
+
+          <p class="text-[16px]"><strong>Características:</strong></p>
+
+          <p class="text-[16px]">
+            • Compatible con encuadernados y libros empastados.
+          </p>
+          <p class="text-[16px]">• Seguro para documentos frágiles.</p>
+          <p class="text-[16px]">• Tiempo de digitalización lento.</p>
+          <p class="text-[16px]">• No cuenta con alimentador.</p>
+          <p class="text-[16px]">• Capaz de digitalizar un lado a la vez.</p>
+          <p class="text-[16px]">• Costo elevado.</p>
+
+          <p class="text-[16px]">
+            ¿Busca digitalizar libros o documentos demasiado frágiles?
+            <a href="#top" class="text-[var(--primary)]">
+              <strong> Agende su cita hoy mismo</strong>
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-[100%] grid gap-[15px] md:w-[40%] h-auto items-start text-center bg-[var()--alternative] rounded-[25px] transition-all duration-200 hover:-translate-y-2 transition-all duration-200"
+      >
+        <div class="shadow-lg">
+          <img src={img2.src} />
+        </div>
+
+        <div
+          class="aspect-square w-[20%] border-4 border-white rounded-full
+                    flex justify-center items-center bg-[var(--primary)]"
+        >
+          <CassetteTape class="w-[50%] h-[50%] text-white" />
+        </div>
+
+        <div class="grid gap-[15px]">
+          <h3 class="text-[24px] border-l-4 border-[var(--secondary)]">
+            Plano
+          </h3>
+
+          <p class="text-[16px]">
+            Perfecto para hojas sueltas, especializado para formatos de doble
+            carta o en mal estado.
+          </p>
+
+          <p class="text-[16px]"><strong>Características:</strong></p>
+
+          <p class="text-[16px]">• Tiempo de digitalización intermedio.</p>
+          <p class="text-[16px]">• Seguro para documentos en mal estado.</p>
+          <p class="text-[16px]">• Costo accesible.</p>
+          <p class="text-[16px]">• Existen modelos con alimentador.</p>
+          <p class="text-[16px]">• No compatible con libros.</p>
+          <p class="text-[16px]">• Capaz de digitalizar un lado a la vez.</p>
+
+          <p class="text-[16px]">
+            ¿Desea digitalizar sus documentos sin importar el tiempo?
+            <a href="#top" class="text-[var(--primary)]">
+              <strong> Agende su cita hoy mismo</strong>
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-[100%] grid gap-[15px] md:w-[40%] h-auto items-start text-center bg-[var()--alternative] rounded-[25px] transition-all duration-200 hover:-translate-y-2 transition-all duration-200"
+      >
+        <div class="shadow-lg">
+          <img src={img3.src} />
+        </div>
+
+        <div
+          class="aspect-square w-[20%] border-4 border-white rounded-full
+                    flex justify-center items-center bg-[var(--primary)]"
+        >
+          <Printer class="w-[50%] h-[50%] text-white" />
+        </div>
+
+        <div class="grid gap-[15px]">
+          <h3 class="text-[24px] border-l-4 border-[var(--secondary)]">
+            A.D.F.
+          </h3>
+
+          <p class="text-[16px]">
+            Digitalización de alta velocidad, ofrece un escaneo a doble cara en
+            tan solo una pasada por documento.
+          </p>
+
+          <p class="text-[16px]"><strong>Características:</strong></p>
+
+          <p class="text-[16px]">• Tiempo de digitalización rápido.</p>
+          <p class="text-[16px]">• Cuenta con alimentador de hojas.</p>
+          <p class="text-[16px]">
+            • Capaz de digitalizar doble cara en una pasada.
+          </p>
+          <p class="text-[16px]">• No compatible con libros.</p>
+          <p class="text-[16px]">• Costo elevado.</p>
+          <p class="text-[16px]">
+            • Ideado para documentos en buenas condiciones.
+          </p>
+
+          <p class="text-[16px]">
+            ¿Requiere de un servicio rápido y preciso de digitalización?
+            <a href="#top" class="text-[var(--primary)]">
+              <strong> Agende su cita hoy mismo</strong>
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
