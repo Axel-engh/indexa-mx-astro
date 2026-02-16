@@ -6,17 +6,19 @@ import { Clock8 } from "lucide-astro";
 ---
 
 <section
-  class="p-6 md:w-[100%] md:px-[250px] h-auto md:h-screen bg-[url('/img/landing-bg-2-white.webp')] bg-cover bg-center bg-no-repeat opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards]"
+  id="title"
+  class="p-6 mb-[5%] h-auto bg-[url('/img/landing-bg-2-white.webp')] bg-cover bg-center bg-no-repeat opacity-0 translate-y-4 animate-[fadeUp_0.6s_ease-out_forwards] lg:px-[250px] lg:h-screen"
 >
+
   <div
-    class="flex flex-col md:flex-row h-auto md:h-[55%] mt-[30px] gap-10 md:gap-0"
+    class="flex flex-col justify-center md:flex-row h-auto md:h-[55%] mt-[30px] gap-10 md:gap-0"
   >
     <div class="text-center md:text-left">
       <h1
         class="text-[40px] grid md:font-semiboldleading-tight md:leading-[90px]"
       >
-        <span class="text-[60px]">Acervo Digital</span>
-        <span class="text-[#b7d433] text-[60px]">Garantizado</span>
+        <span class="text-[60px]"><strong>Acervo Digital</strong></span>
+        <span class="text-[#b7d433] text-[60px]"><strong>Garantizado</strong></span>
       </h1>
 
       <p
@@ -41,18 +43,20 @@ import { Clock8 } from "lucide-astro";
       <div class="grid w-[150px] text-center">
         <a
           class="bg-[#b7d433] px-[10px] py-[5px] border-l border-l-[rgba(254,254,254,0.3)] text-[0.7rem] rounded-[25px] text-white hover:shadow-xl hover:-translate-y-1 transition"
-          href="https://indexa.mx/"
+          href="/index"
         >
           INDEXA.MX
         </a>
       </div>
 
       <div class="grid w-[150px] text-center">
-        <p
+        <a 
           class="bg-[#b7d433] px-[10px] py-[5px] border-l border-l-[rgba(254,254,254,0.3)] text-[0.7rem] uppercase rounded-[25px] text-white hover:shadow-xl hover:-translate-y-1 transition cursor-pointer"
-        >
+          href="/digitalizacion"        
+          >
+
           Digitalización
-        </p>
+      </a>
       </div>
 
       <div class="relative flex justify-center">
@@ -66,15 +70,16 @@ import { Clock8 } from "lucide-astro";
         />
       </div>
 
-      <button
-        class="bg-[#0f143a] px-[10px] py-[5px] text-[0.7rem] uppercase rounded-[25px] text-white w-[150px] hover:shadow-xl hover:-translate-y-1 transition"
-      >
+      <a
+        class="bg-[#0f143a] z-20 px-[10px] py-[5px] text-[0.7rem] uppercase rounded-[25px] text-white w-[150px] hover:shadow-xl hover:-translate-y-1 transition"
+        href="#process"
+        >
         Más Información
-      </button>
+    </a>
     </div>
   </div>
   <div
-    class="w-full md:w-[47%] flex flex-col justify-center lg:mt-[10px] inline-table md:mt-[60px] inline-table"
+    class="w-full inline relative md:w-[47%] flex flex-col justify-center lg:mt-[10px] md:mt-[60px]"
   >
     <div
       class="flex flex-col md:flex-row gap-4 justify-center mb-[30px] mt-[30px]"
@@ -105,8 +110,8 @@ import { Clock8 } from "lucide-astro";
       </div>
     </div>
 
-    <p class="text-center mb-[10px] text-[16px]">
-      ¿En qué horario podemos contactarle?
+    <p class="text-center mb-[10px] text-[16px]"><strong>
+      ¿En qué horario podemos contactarle?</strong>
     </p>
 
     <div class="flex flex-col md:flex-row gap-4 justify-center">
@@ -154,9 +159,10 @@ import { Clock8 } from "lucide-astro";
     </div>
 
     <button
-      class="bg-[#0f143a] text-white rounded-[25px] mt-[20px] w-full md:w-[50%] md:h-[39%] mx-auto block hover:shadow-xl hover:-translate-y-1 transition"
+      class="bg-[#0f143a] text-white rounded-[25px] mt-[20px] w-full md:w-[50%] md:h-[6%] mx-auto block hover:shadow-xl hover:-translate-y-1 transition"
     >
       ENVIAR SOLICITUD
     </button>
   </div>
+  
 </section>
